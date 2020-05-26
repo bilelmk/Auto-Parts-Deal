@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar >
+    <ion-buttons slot="start">
+      <ion-button>
+        <ion-menu-button></ion-menu-button>
+      </ion-button>
+    </ion-buttons>
+
+    <ion-title>Accueil</ion-title>
+
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon slot="icon-only" name="search-outline"></ion-icon>
+      </ion-button>
+
+      <ion-button id="cart-btn" (click)="openNotification()">
+        <ion-icon slot="icon-only" name="notifications-outline"></ion-icon>
+        <ion-badge id="cart-badge" color="danger">1</ion-badge>
+      </ion-button>
+
+      <ion-button (click)="openCart()">
+        <ion-icon slot="icon-only" name="cart-outline"></ion-icon>
+      </ion-button>
+
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+</ion-content>

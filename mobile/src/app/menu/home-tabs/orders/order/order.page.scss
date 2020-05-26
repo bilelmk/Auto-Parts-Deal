@@ -1,0 +1,45 @@
+ion-title {
+  padding: 0;
+  font-family: Roboto-Medium;
+}
+
+
+.section-row {
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.38);
+  padding: 0 !important;
+}
+
+.section-title  {
+  font-family: Roboto-Bold;
+  padding-bottom: 10px;
+  margin: 0 !important;
+  border-bottom: 2px solid black;
+}
+.product-name {
+  margin: 5px 0;
+  font-size: 90%;
+  font-weight: bold;
+}
+.product-description {
+  margin: 5px 0;
+  font-size: 90%;
+  line-height: 1.4;
+}
+.price {
+  color: var(--ion-color-danger);
+  font-size: 120%;
+  font-weight: bold;
+}
+
+.btn {
+  width: 100%;
+  font-size: 10px;
+}
+
+h2 {
+  margin: 10px 0;
+  font-size: 100%;
+  span {
+    font-weight: bold;
+  }
+}

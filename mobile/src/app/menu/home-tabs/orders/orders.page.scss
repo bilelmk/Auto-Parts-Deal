@@ -1,0 +1,53 @@
+ion-title {
+  padding: 0;
+  font-family: Roboto-Medium;
+}
+#cart-btn {
+  position: relative;
+}
+
+#cart-badge {
+  font-size: 10px;
+  position: absolute;
+  top: -5px;
+  right: -2px;
+}
+
+ion-segment-button {
+  font-family: Roboto-Medium;
+  --background-checked : var(--ion-color-danger-shade) ;
+  --color-checked : var(--ion-color-secondary) ;
+  --color : var(--ion-color-danger) ;
+  --background : var(--ion-color-danger-tint) ;
+  --border-color : var(--ion-color-danger-shade) ;
+}
+
+.filter-btn {
+  width: 50px;
+  background: none !important;
+  outline: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.filter-icon {
+  font-size: 30px;
+  padding: 4px 10px ;
+  margin: 3px 0;
+}
+
+ion-searchbar {
+  padding: 0;
+}
+
+h2 {
+  line-height: 1.6;
+  span {
+    font-weight: bold;
+  }
+}
+
+ion-list {
+  padding: 0;
+  width: 100%;
+}

@@ -1,0 +1,61 @@
+.segment-label {
+  font-size: 80%;
+  line-height: 1.5;
+  padding-top: 8px;
+}
+
+ion-segment-button {
+  font-family: Roboto-Bold;
+  --background-checked : var(--ion-color-danger-shade) ;
+  --color-checked : var(--ion-color-secondary) ;
+  --color : var(--ion-color-danger) ;
+  --background : var(--ion-color-danger-tint) ;
+  --border-color : var(--ion-color-danger-shade) ;
+}
+
+ion-list {
+  width: 100%;
+}
+
+ion-label {
+  width: 100%;
+  display: block;
+}
+
+.livraison-text {
+  line-height: 1.6 ;
+  font-weight: bold;
+
+  span {
+    color: var(--ion-color-danger);
+    font-size: 90%;
+  }
+}
+
+.login-input{
+  width: 100%;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 10px;
+  height: 35px;
+  border-radius: 4px;
+  border : 0.5px solid var(--ion-color-danger-shade);
+  color: rgb(97, 97, 97);
+  font-size: 95%;
+  background-color: rgba(233, 61, 78, 0.19) !important;
+  outline: none;
+}
+
+.login-label{
+  font-size: 85%;
+  color: var(--ion-color-dark) ;
+  font-family: Roboto-Regular;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.pointer {
+  cursor: pointer ;
+}

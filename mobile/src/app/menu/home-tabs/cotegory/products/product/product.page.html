@@ -1,0 +1,66 @@
+<ion-header>
+  <ion-toolbar >
+    <ion-buttons slot="start">
+      <ion-button>
+        <ion-back-button></ion-back-button>
+      </ion-button>
+    </ion-buttons>
+
+    <ion-title>Produit</ion-title>
+
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon slot="icon-only" name="heart-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content class="ion-padding-end ion-padding-start ion-padding-top">
+  <p class="product-name"> Feu avant droit full Led Seat Leo Modèles 2013/2018</p>
+  <p class="product-description"> Feu avant droit full Led Seat Leo Modèles 2013/2018 Feu avant droit full Led Seat Leo Modèles 2013/2018</p>
+  <ion-slides pager="true" [options]="slideOpts">
+    <ion-slide >
+      <img  src="../../../../../../assets/img/img.jpg">
+    </ion-slide>
+    <ion-slide>
+      <img  src="../../../../../../assets/img/img.jpg">
+    </ion-slide>
+    <ion-slide>
+      <img  src="../../../../../../assets/img/img.jpg">
+    </ion-slide>
+  </ion-slides>
+
+  <ion-row>
+    <ion-col size="6">
+      <h4 class="price">270.000 TND</h4>
+      <p class="disponible">Disponible</p>
+
+      <input class="quantite" />
+
+      <button class="quantite-btn ion-activatable ripple-parent" >
+        <ion-icon name="add-outline"></ion-icon>
+      </button>
+
+      <button class="quantite-btn ion-activatable ripple-parent">
+        <ion-icon name="remove-outline"></ion-icon>
+      </button>
+
+      <p class="livraison">Livraison gratuite grand tunis </p>
+
+    </ion-col>
+    <ion-col size="6">
+      <ion-button class="btn" color="danger" size="full" >
+        Ajouter au panier
+        <ion-icon slot="start" name="cart-outline"></ion-icon>
+      </ion-button>
+      <ion-button class="btn ion-margin-top" color="danger" size="full" >
+        Fiche technique
+        <ion-icon slot="start" name="reader-outline"></ion-icon>
+      </ion-button>
+    </ion-col>
+  </ion-row>
+
+</ion-content>

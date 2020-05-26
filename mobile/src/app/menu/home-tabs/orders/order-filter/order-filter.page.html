@@ -1,0 +1,61 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-title  >Filtrer les commandes</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="dismiss()">
+        <ion-icon slot="icon-only" name="close-sharp"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding-top">
+  <ion-grid class="ion-padding-top ion-padding-start ion-padding-end">
+    <ion-row class="section-row">
+      <p class="section-title">TYPE DE COMMANDES</p>
+    </ion-row>
+    <ion-row>
+      <ion-list >
+        <ion-item >
+          <ion-label>Toutes les commandes</ion-label>
+          <ion-checkbox color="danger" mode="ios" slot="start" ></ion-checkbox>
+        </ion-item>
+        <ion-item >
+          <ion-label>Commandes en cours</ion-label>
+          <ion-checkbox color="danger" mode="ios" slot="start" ></ion-checkbox>
+        </ion-item>
+        <ion-item >
+          <ion-label>Commandes annulés</ion-label>
+          <ion-checkbox color="danger" mode="ios" slot="start" ></ion-checkbox>
+        </ion-item>
+      </ion-list>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid class="ion-padding">
+    <ion-row class="section-row">
+      <p class="section-title">FILTERS SUR LE TEMPS</p>
+    </ion-row>
+    <ion-row >
+      <ion-list >
+        <ion-item >
+          <ion-label>30 derniers jours</ion-label>
+          <ion-checkbox color="danger" mode="ios" slot="start" ></ion-checkbox>
+        </ion-item>
+        <ion-item >
+          <ion-label>6 derniers jours</ion-label>
+          <ion-checkbox color="danger" mode="ios" slot="start" ></ion-checkbox>
+        </ion-item>
+        <ion-item >
+          <ion-label>en 2020</ion-label>
+          <ion-checkbox color="danger" mode="ios" slot="start" ></ion-checkbox>
+        </ion-item>
+        <ion-item >
+          <ion-label>en 2019</ion-label>
+          <ion-checkbox color="danger" mode="ios" slot="start" ></ion-checkbox>
+        </ion-item>
+      </ion-list>
+    </ion-row>
+    <ion-button class="ion-margin-top" expand="full" color="dark">Terminé</ion-button>
+  </ion-grid>
+</ion-content>

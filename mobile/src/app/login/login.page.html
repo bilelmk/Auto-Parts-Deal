@@ -1,0 +1,51 @@
+<ion-content fullscreen="true">
+  <ion-grid >
+    <ion-row class="logo-row ion-justify-content-center">
+      <ion-col size="6" size-sm="4"   >
+        <img src="../../../assets/img/logo.png" alt="logo">
+      </ion-col>
+    </ion-row>
+
+
+    <form>
+      <ion-row class="ion-margin-top">
+
+        <ion-col size="10" size-sm="6" offset="1" offset-sm="3">
+          <label   class="login-label">Nom d'utilisateur</label>
+        </ion-col>
+        <ion-col size="10" size-sm="6" offset="1" offset-sm="3">
+          <input    class="login-input" type="text" />
+        </ion-col>
+
+        <ion-col  size="10" size-sm="6" offset="1" offset-sm="3">
+          <label  class="login-label">Mot de passe</label>
+        </ion-col>
+        <ion-col size="10" size-sm="6" offset="1" offset-sm="3">
+          <input     class="login-input" type="password" />
+        </ion-col>
+
+        <ion-col size="10" size-sm="6" offset="1" offset-sm="3">
+          <ion-item>
+            <ion-label class="login-label">Remember me</ion-label>
+            <ion-toggle  slot="start" color="light"></ion-toggle>
+          </ion-item>
+        </ion-col>
+
+        <ion-col  size="10" size-sm="6" offset="1" offset-sm="3">
+          <ion-button (click)="text()" class="login-btn" expand="full" >Se Connecter</ion-button>
+        </ion-col>
+
+        <ion-col class="ion-text-center signup_p" size="10" size-sm="6" offset="1" offset-sm="3">
+          <p>Vous n'avez pas de compte<a class="signup_link"  routerLink="/register"> S'inscrire</a></p>
+        </ion-col>
+
+      </ion-row>
+    </form>
+  </ion-grid>
+
+  <ion-row class="ion-align-self-end ion-align-items-end ion-justify-content-center">
+    <a class="forgot" routerLink="/forgot">Forgot Password ?</a>
+  </ion-row>
+
+</ion-content>
+

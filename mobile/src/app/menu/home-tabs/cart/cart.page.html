@@ -1,0 +1,112 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-title>Mon Panier</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="dismiss()">
+        <ion-icon slot="icon-only" name="close-sharp"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+  <ion-grid >
+
+    <ion-row class="section-row">
+      <p class="section-title">ARTICLES</p>
+    </ion-row>
+
+    <ion-list lines="full">
+
+      <ion-item-sliding>
+        <ion-item>
+          <ion-row>
+
+            <ion-col size="4">
+              <img src="../../../../../assets/img/img.jpg" >
+
+              <input class="quantite" />
+
+              <button class="quantite-btn ion-activatable ripple-parent" >
+                <ion-icon name="add-outline"></ion-icon>
+              </button>
+
+              <button class="quantite-btn ion-activatable ripple-parent">
+                <ion-icon name="remove-outline"></ion-icon>
+              </button>
+            </ion-col>
+
+            <ion-col size="8" >
+              <p class="product-name">
+                Feu avant droit full Led Seat Leo <br>
+                Modèles 2013/2018
+              </p>
+              <p class="product-description">
+                <span class="price">250 TND</span><br>
+                Produit d'origine<br>
+                Constructeur : SEAT<br>
+              </p>
+
+              <p class="total">Total : 1000TND </p>
+            </ion-col>
+          </ion-row>
+        </ion-item>
+
+        <ion-item-options side="end">
+          <ion-item-option >
+            <ion-icon name="trash-sharp"></ion-icon>
+          </ion-item-option>
+        </ion-item-options>
+      </ion-item-sliding>
+
+      <ion-item-sliding>
+        <ion-item>
+          <ion-row>
+            <ion-col size="4">
+              <img src="../../../../../assets/img/img.jpg" >
+
+              <input class="quantite" />
+
+              <button class="quantite-btn ion-activatable ripple-parent" >
+                <ion-icon name="add-outline"></ion-icon>
+              </button>
+
+              <button class="quantite-btn ion-activatable ripple-parent">
+                <ion-icon name="remove-outline"></ion-icon>
+              </button>
+            </ion-col>
+            <ion-col size="8">
+              <p class="product-name">
+                Feu avant droit full Led Seat Leo <br>
+                Modèles 2013/2018
+              </p>
+              <p class="product-description">
+                <span class="price">250 TND</span><br>
+                Produit d'origine<br>
+                Constructeur : SEAT<br>
+              </p>
+              <p class="total">Total : 1000TND </p>
+            </ion-col>
+          </ion-row>
+        </ion-item>
+        <ion-item-options side="end">
+          <ion-item-option >
+            <ion-icon name="trash-sharp"></ion-icon>
+          </ion-item-option>
+        </ion-item-options>
+      </ion-item-sliding>
+
+    </ion-list>
+
+    <ion-row class="section-row">
+      <p class="section-title">DETAILS DE PANIER</p>
+    </ion-row>
+
+    <ion-button class="ion-margin" expand="full" color="dark">Valider le panier</ion-button>
+
+  </ion-grid>
+
+
+
+  <button (click)="openConfiguration()">conf</button>
+</ion-content>

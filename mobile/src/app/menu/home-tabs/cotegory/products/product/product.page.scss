@@ -1,0 +1,76 @@
+ion-title {
+  padding: 0;
+  font-family: Roboto-Medium;
+}
+.product-name {
+  font-size: 100%;
+  font-weight: bold;
+  line-height: 1.6;
+  margin: 5px 0;
+}
+.product-description {
+  font-size: 80%;
+  margin: 5px 0;
+  line-height: 1.4;
+}
+
+.price {
+  margin: 0;
+  color: var(--ion-color-danger);
+  font-size: 120%;
+  font-weight: bold;
+}
+
+.disponible {
+  color: var(--ion-color-dark);
+  font-weight: bold;
+  font-size: 90%;
+  margin: 10px 0;
+}
+
+.quantite {
+  text-align: center;
+  margin-top: 0px;
+  margin-right: 3px;
+  width: 50%;
+  height: 30px;
+  border-radius: 4px;
+  border : 0.5px solid var(--ion-color-danger-shade);
+  color: rgb(97, 97, 97);
+  background-color: rgba(233, 61, 78, 0.19) !important;
+  outline: none;
+}
+
+.quantite-btn {
+  border-radius: 3px;
+  font-weight: bold;
+  padding: 0;
+  height: 26px;
+  width: 24px;
+  margin: 0 3px;
+  background-color: var(--ion-color-danger);
+  color: white;
+  outline : none ;
+}
+
+.livraison {
+  font-size: 90%;
+  margin: 10px 0;
+  color: var(--ion-color-danger-shade);
+}
+
+ion-slides {
+  margin-top: 20px;
+  height: 40vh;
+}
+
+img {
+  height: 34vh;
+  width: 100%;
+  margin-bottom: 6vh;
+  border: 1px solid rgba(81, 81, 81, 0.31);
+}
+
+.btn {
+  font-size: 10px;
+}

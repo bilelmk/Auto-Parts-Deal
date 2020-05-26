@@ -1,0 +1,144 @@
+<ion-header>
+  <ion-toolbar >
+    <ion-title class="ion-text-center">Paiement et Livraison</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="dismiss()">
+        <ion-icon slot="icon-only" name="close-sharp"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-segment (ionChange)="segmentChanged($event)"  value="card">
+    <ion-segment-button value="card">
+      <ion-label class="segment-label">Cart de <br>crédit</ion-label>
+      <ion-icon size="large" name="card-outline"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button value="account">
+      <ion-label class="segment-label">Compte <br> bancaire</ion-label>
+      <ion-icon size="large" name="business-outline"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button value="delivery">
+      <ion-label class="segment-label">Mode de <br> livraison</ion-label>
+      <ion-icon size="large" name="car-outline"></ion-icon>
+    </ion-segment-button>
+  </ion-segment>
+
+
+  <ion-grid class="ion-padding">
+
+    <ion-row *ngIf="selectedSegment === 'card' ">
+      <ion-col size="12" class="ion-margin-top">
+        <label   class="login-label">Numéro de carte crédit ou débit</label>
+      </ion-col>
+      <ion-col size="12">
+        <input    class="login-input" type="text" />
+      </ion-col>
+      <ion-col size="6" class="ion-margin-top"  >
+        <label   class="login-label">Code sécurité(CW)</label>
+      </ion-col>
+      <ion-col size="6" class="ion-margin-top">
+        <label   class="login-label">Date d'expiration</label>
+      </ion-col>
+      <ion-col size="6"  >
+        <input    class="login-input" type="text" />
+      </ion-col>
+      <ion-col size="6">
+        <input  (click)="picker.open()" class="login-input pointer" type="text" />
+      </ion-col>
+      <ion-col size="12" class="ion-margin-top">
+        <label   class="login-label">Code postale</label>
+      </ion-col>
+      <ion-col size="12" >
+        <input    class="login-input" type="text" />
+      </ion-col>
+    </ion-row>
+
+    <ion-row *ngIf="selectedSegment === 'account' ">
+
+
+
+      <ion-col size="6" class="ion-margin-top"  >
+        <label   class="login-label">Devise</label>
+      </ion-col>
+      <ion-col size="6" class="ion-margin-top">
+        <label   class="login-label">Pays</label>
+      </ion-col>
+      <ion-col size="6"  >
+        <input  (click)="devise.open()"  class="login-input pointer" type="text" />
+      </ion-col>
+      <ion-col size="6">
+        <input   (click)="pays.open()" class="login-input pointer" type="text" />
+      </ion-col>
+
+      <ion-col size="12" class="ion-margin-top">
+        <label   class="login-label">Nom de titulaire du compte</label>
+      </ion-col>
+      <ion-col size="12">
+        <input    class="login-input" type="text" />
+      </ion-col>
+      <ion-col size="12" class="ion-margin-top"  >
+        <label   class="login-label">IBAN</label>
+      </ion-col>
+      <ion-col size="12">
+        <input    class="login-input" type="text" />
+      </ion-col>
+      <ion-col size="12" class="ion-margin-top">
+        <label   class="login-label">Cnfirme IBAN</label>
+      </ion-col>
+      <ion-col size="12" >
+        <input    class="login-input" type="text" />
+      </ion-col>
+    </ion-row>
+
+    <ion-row *ngIf="selectedSegment === 'delivery' ">
+      <ion-list >
+        <ion-item >
+          <p class="livraison-text">
+            Livraison<br>
+            <span>Recevez le mercredi 4 mars</span>
+          </p>
+          <ion-checkbox color="danger" mode="ios" slot="start" ></ion-checkbox>
+        </ion-item>
+        <ion-item >
+          <p class="livraison-text">
+            Livraison Express<br>
+            <span>Recevez le mardi 3 mars</span>
+          </p>
+          <ion-checkbox color="danger" mode="ios" slot="start" ></ion-checkbox>
+        </ion-item>
+        <ion-item >
+          <p class="livraison-text">
+            Livraison à la <br>
+            <ion-item >
+              <ion-label>jj/mm/aa</ion-label>
+              <ion-datetime displayFormat="MM/DD/YYYY" ></ion-datetime>
+            </ion-item>
+            <ion-item  >
+              <ion-label>hh:mm</ion-label>
+              <ion-datetime  displayFormat="HH:mm" ></ion-datetime>
+            </ion-item>
+          </p>
+          <ion-checkbox color="danger" mode="ios" slot="start" ></ion-checkbox>
+        </ion-item>
+      </ion-list>
+    </ion-row>
+
+    <ion-button class="ion-margin-top" expand="full" color="dark">Confirmer</ion-button>
+  </ion-grid>
+
+  <!-- hidden element -->
+  <ion-select class="hidden" #devise value="a" okText="Confirmer" cancelText="annulé">
+    <ion-select-option value="">EUR</ion-select-option>
+    <ion-select-option value="">DOLAR</ion-select-option>
+  </ion-select>
+
+  <ion-select class="hidden" #pays value="a" okText="Confirmer" cancelText="annulé">
+    <ion-select-option value="">TUNISIE</ion-select-option>
+    <ion-select-option value="">FRANCE</ion-select-option>
+  </ion-select>
+
+  <ion-datetime #picker class="hidden"  displayFormat="MM/DD/YYYY" ></ion-datetime>
+
+</ion-content>

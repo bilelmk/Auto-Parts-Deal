@@ -1,0 +1,149 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-title>Filtrer les produits</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="dismiss()">
+        <ion-icon slot="icon-only" name="close-sharp"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding-top">
+  <ion-grid class="ion-padding-top ion-padding-start ion-padding-end">
+    <ion-row class="section-row">
+      <p class="section-title">VEHICULE</p>
+    </ion-row>
+    <ion-row>
+      <ion-list lines="none">
+        <ion-item>
+          <ion-label >Choissisez une marque</ion-label>
+          <ion-select  multiple="true" cancelText="Annulé" okText="Confirmer">
+            <ion-select-option value="">marque 1</ion-select-option>
+            <ion-select-option value="">marque 2</ion-select-option>
+            <ion-select-option value="">marque 3</ion-select-option>
+            <ion-select-option value="">marque 4</ion-select-option>
+          </ion-select>
+        </ion-item>
+        <ion-item>
+          <ion-label >Choissisez un modèle</ion-label>
+          <ion-select  multiple="true" cancelText="Annulé" okText="Confirmer">
+            <ion-select-option value="">modèle 1</ion-select-option>
+            <ion-select-option value="">modèle 2</ion-select-option>
+            <ion-select-option value="">modèle 3</ion-select-option>
+            <ion-select-option value="">modèle 4</ion-select-option>
+          </ion-select>
+        </ion-item>
+        <ion-item>
+          <ion-label >Choissisez un type de motorisation</ion-label>
+          <ion-select multiple="true" cancelText="Annulé" okText="Confirmer">
+            <ion-select-option value="">type 1</ion-select-option>
+            <ion-select-option value="">type 2</ion-select-option>
+            <ion-select-option value="">type 3</ion-select-option>
+            <ion-select-option value="">type 4</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-list>
+    </ion-row>
+
+    <ion-row class="section-row">
+      <p class="section-title">CATEGORIE</p>
+    </ion-row>
+    <ion-row>
+      <ion-list lines="none">
+        <ion-item>
+          <ion-label >Choissisez une cathegorie</ion-label>
+          <ion-select multiple="true" cancelText="Annulé" okText="Confirmer">
+            <ion-select-option value="">cathegorie 1</ion-select-option>
+            <ion-select-option value="">cathegorie 2</ion-select-option>
+            <ion-select-option value="">cathegorie 3</ion-select-option>
+            <ion-select-option value="">cathegorie 4</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-list>
+    </ion-row>
+
+    <ion-row class="section-row">
+      <p class="section-title">CONSTRUCTEUR</p>
+    </ion-row>
+    <ion-row >
+      <ion-list lines="none">
+        <ion-item>
+          <ion-label >Choissisez un constructeur</ion-label>
+          <ion-select multiple="true" cancelText="Annulé" okText="Confirmer">
+            <ion-select-option value="">constructeur 1</ion-select-option>
+            <ion-select-option value="">constructeur 2</ion-select-option>
+            <ion-select-option value="">constructeur 3</ion-select-option>
+            <ion-select-option value="">constructeur 4</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-list>
+    </ion-row>
+
+    <ion-row class="section-row">
+      <p class="section-title">MOT CLE</p>
+    </ion-row>
+    <ion-row >
+      <ion-list lines="none">
+        <ion-item >
+          <input placeholder="Mot clé">
+        </ion-item>
+      </ion-list>
+    </ion-row>
+
+    <ion-row class="section-row">
+      <p class="section-title">QUALITE</p>
+    </ion-row>
+    <ion-row >
+      <ion-list lines="none">
+        <ion-item >
+          <ion-label>Tous</ion-label>
+          <ion-checkbox color="danger" mode="ios" slot="start" ></ion-checkbox>
+        </ion-item>
+        <ion-item >
+          <ion-label>D'origine</ion-label>
+          <ion-checkbox color="danger" mode="ios" slot="start" ></ion-checkbox>
+        </ion-item>
+        <ion-item >
+          <ion-label>Adaptable</ion-label>
+          <ion-checkbox color="danger" mode="ios" slot="start" ></ion-checkbox>
+        </ion-item>
+      </ion-list>
+    </ion-row>
+
+    <ion-row class="section-row">
+      <p class="section-title">PRIX</p>
+    </ion-row>
+    <ion-row >
+      <ion-list lines="none">
+        <ion-item>
+          <ion-range dualKnobs="true" min="21" max="72" step="1" color="danger" pin>
+
+            <ion-icon slot="start" size="small"  name="cash-outline"></ion-icon>
+            <ion-icon slot="end"  name="cash-outline"></ion-icon>
+          </ion-range>
+        </ion-item>
+      </ion-list>
+    </ion-row>
+
+    <ion-row class="section-row">
+      <p class="section-title">PROMOTION</p>
+    </ion-row>
+    <ion-row >
+      <ion-list lines="none">
+        <ion-item >
+          <ion-label>Tous</ion-label>
+          <ion-checkbox color="danger" mode="ios" slot="start" ></ion-checkbox>
+        </ion-item>
+        <ion-item >
+          <ion-label>En promotion</ion-label>
+          <ion-checkbox color="danger" mode="ios" slot="start" ></ion-checkbox>
+        </ion-item>
+      </ion-list>
+    </ion-row>
+    <ion-button class="ion-margin-top ion-margin-bottom" expand="full" color="dark">Terminé</ion-button>
+
+  </ion-grid>
+
+
+</ion-content>
